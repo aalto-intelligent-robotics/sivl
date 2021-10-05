@@ -1,0 +1,50 @@
+device: "cuda:0" # Cuda device to use.
+
+data:
+  path:
+    trainingdata_bitmaps: # These areas are used in training.
+      woodbridge: "../data/USGS/sat_data/woodbridge/images"
+      fountainhead: "../data/USGS/sat_data/fountainhead/images"
+      ge_area1: "../data/google_earth_exports/area1"
+      ge_area2: "../data/google_earth_exports/area2"
+      ge_area4: "../data/google_earth_exports/area4"
+      ge_area5: "../data/google_earth_exports/area5"
+      ge_area6: "../data/google_earth_exports/area6"
+      ge_area12: "../data/google_earth_exports/area12"
+      ge_area13: "../data/google_earth_exports/area13"
+      ge_area14: "../data/google_earth_exports/area14"
+      ge_area15: "../data/google_earth_exports/area15"
+    testingdata_bitmaps: # These datasets are used as testing data during training.
+      ge_area3: "../data/google_earth_exports/area3"
+    mcltestingdata_bitmaps: # These datasets may be used for MCL experiments.
+      ge_area3: "../data/google_earth_exports/area3"
+      ge_area7: "../data/google_earth_exports/area7"
+    scoretoprobtraining_bitmaps: # These datasets are used for learning likelihood.
+      ge_area8: "../data/google_earth_exports/area8"
+      ge_area9: "../data/google_earth_exports/area9"
+      ge_area10: "../data/google_earth_exports/area10"
+      ge_area11: "../data/google_earth_exports/area11"
+
+training:
+  initial_model_checkpoint: "" # Specify an initial checkpoint to start training from.
+  use_only_network_params: True # Set to "False" to continue from an interrupted training loop.
+  checkpoint_saving_path: "../checkpoints/"
+  lossFigureSavePath: "../checkpoints/loss_figures/"
+  numEpochs: 1000
+  save_every: 100 # save every Nth epoch state on disk
+  batchsize: 200
+  printAfterEveryNthBatch: 10
+  apShiftingStd: 20 # See BitmapDataset.py for explanation.
+  plotLossFigure: True
+  marginBetweenSamples_px: 0 # See BitmapDataset.py for explanation.
+  homographyCornerErrorStd_px: 1 # See BitmapDataset.py for explanation.
+  rotationErrorStd_deg: 0.5 # See BitmapDataset.py for explanation.
+  translationErrorStd_px: 0.5 # See BitmapDataset.py for explanation.
+  scaleStd: 0.1 # See BitmapDataset.py for explanation.
+  experiment_name: "experiment_name_here" # Experiment descriptor to use for saving checkpoint and loss figure.
+
+evaluation:
+  model_checkpoint: "../checkpoints/exp45_clean.pt" # This checkpoint is used for evaluations.
+
+sampledimensions:
+  dimension_px: 96 # Dimensions of images used in similarity scoring.
