@@ -12,7 +12,7 @@ MIT license
 ## Setting up
 Clone this repository on your computer.
 
-Download the checkpoint file ```exp45.pt``` from TODO and place it in folder ```checkpoints```.
+Download the checkpoint file ```exp45_clean.pt``` from [here](https://users.aalto.fi/~jkinnari/sivl/exp45_clean.pt) and place it in folder ```checkpoints```.
 
 Install Anaconda. Create a new environment using the provided yml file:
 
@@ -34,9 +34,18 @@ After downloading the data as instructed at the end of this file, you may train 
 ## Learning likelihood
 To compute likelihood from similarity score, download the required data and run ```learnLikelihood.py```
 
-## Citing
 
-To be added.
+## Citing
+If this code is useful in your research, please consider citing:
+
+```
+@article{kinnari2021sivl,
+  title={Season-invariant GNSS-denied visual localization for UAVs},
+  author={Kinnari, Jouko and Verdoja, Francesco and Kyrki, Ville},
+  journal={arXiv preprint arXiv:TODO},
+  year={2021}
+}
+```
 
 ## Downloading data
 
