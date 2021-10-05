@@ -1,24 +1,21 @@
 # Season-invariant GNSS-denied visual localization for UAVs
 
-This repository is an addition to manuscript J. Kinnari, F. Verdoja, V. Kyrki ["Season-invariant GNSS-denied visual localization for UAVs"](https://www.todo.com).
+This repository contains data and code for manuscript J. Kinnari, F. Verdoja, V. Kyrki ["Season-invariant GNSS-denied visual localization for UAVs"](https://www.todo.com).
 
 ## TODO To be done before publishing
-- Add url to paper
-- Store checkpoint file somewhere, add url to it on this page
-
-## License
-MIT license
+- Add url to paper above, update arxiv link to citing section
+- Check that cloning the repo and following the instructions works.
 
 ## Setting up
 Clone this repository on your computer.
 
 Download the checkpoint file ```exp45_clean.pt``` from [here](https://users.aalto.fi/~jkinnari/sivl/exp45_clean.pt) and place it in folder ```checkpoints```.
 
-Install Anaconda. Create a new environment using the provided yml file:
+Install [Anaconda](https://www.anaconda.com/). Create a new environment using the provided yml file:
 
     conda env create -f environment.yml
 
-Note: The ```environment.yml``` file currently contains more packages than necessary.
+Remark: The ```environment.yml``` file currently contains more packages than necessary.
 
 ## Simple example
 A simple example for computing similarity between two 96 by 96 pixel RGB images is provided in ```computeSimilarity.py```. A few sample images can be found in folder ```sample_images```. To check operation of the trained model with pairs of images, run
@@ -29,11 +26,10 @@ A simple example for computing similarity between two 96 by 96 pixel RGB images 
 The file ```configs/configuration.yml``` contains various configuration details with comments for each parameter.
 
 ## Training
-After downloading the data as instructed at the end of this file, you may train the network yourself using the script ```trainSimilarityModel.py```.
+After downloading the data to folder ```data``` as instructed at the end of this file, you may train the network yourself using the script ```trainSimilarityModel.py```.
 
 ## Learning likelihood
 To compute likelihood from similarity score, download the required data and run ```learnLikelihood.py```
-
 
 ## Citing
 If this code is useful in your research, please consider citing:
