@@ -29,7 +29,7 @@ training:
   initial_model_checkpoint: "" # Specify an initial checkpoint to start training from.
   use_only_network_params: True # Set to "False" to continue from an interrupted training loop.
   checkpoint_saving_path: "../checkpoints/"
-  lossFigureSavePath: "../checkpoints/loss_figures/"
+  lossFigureSavePath: "../checkpoints/"
   numEpochs: 1000
   save_every: 100 # save every Nth epoch state on disk
   batchsize: 200
