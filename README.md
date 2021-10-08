@@ -1,10 +1,6 @@
 # Season-invariant GNSS-denied visual localization for UAVs
 
-This repository contains data and code for manuscript J. Kinnari, F. Verdoja, V. Kyrki ["Season-invariant GNSS-denied visual localization for UAVs"](https://www.todo.com).
-
-## TODO To be done before publishing
-- Add url to paper above, update arxiv link to citing section
-- Check that cloning the repo and following the instructions works.
+This repository contains data and code for manuscript J. Kinnari, F. Verdoja, V. Kyrki ["Season-invariant GNSS-denied visual localization for UAVs"](https://arxiv.org/abs/2110.01967).
 
 ## Setting up
 Clone this repository on your computer.
@@ -38,7 +34,7 @@ If this code is useful in your research, please consider citing:
 @article{kinnari2021sivl,
   title={Season-invariant GNSS-denied visual localization for UAVs},
   author={Kinnari, Jouko and Verdoja, Francesco and Kyrki, Ville},
-  journal={arXiv preprint arXiv:TODO},
+  journal={arXiv preprint arXiv:2110.01967},
   year={2021}
 }
 ```
