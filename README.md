@@ -1,3 +1,6 @@
+# Need to update
+This repository is somewhat updated w.r.t. latest version of manuscript. The repository will be updated in case the manuscript is accepted.
+
 # Season-invariant GNSS-denied visual localization for UAVs
 
 This repository contains data and code for manuscript J. Kinnari, F. Verdoja, V. Kyrki ["Season-invariant GNSS-denied visual localization for UAVs"](https://arxiv.org/abs/2110.01967).
