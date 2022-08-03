@@ -1,9 +1,6 @@
-# Need to update
-This repository is somewhat updated w.r.t. latest version of manuscript. The repository will be updated in case the manuscript is accepted.
-
 # Season-invariant GNSS-denied visual localization for UAVs
 
-This repository contains data and code for manuscript J. Kinnari, F. Verdoja, V. Kyrki ["Season-invariant GNSS-denied visual localization for UAVs"](https://arxiv.org/abs/2110.01967).
+This repository contains data and code for manuscript J. Kinnari, F. Verdoja, V. Kyrki ["Season-invariant GNSS-denied visual localization for UAVs"](https://doi.org/10.1109/LRA.2022.3191038).
 
 ## Setting up
 Clone this repository on your computer.
@@ -27,19 +24,19 @@ The file ```configs/configuration.yml``` contains various configuration details 
 ## Training
 After downloading the data to folder ```data``` as instructed at the end of this file, you may train the network yourself using the script ```trainSimilarityModel.py```.
 
-## Learning likelihood
-To compute likelihood from similarity score, download the required data and run ```learnLikelihood.py```
-
 ## Citing
 If this code is useful in your research, please consider citing:
 
 ```
-@article{kinnari2021sivl,
-  title={Season-invariant GNSS-denied visual localization for UAVs},
+@ARTICLE{9830867,
   author={Kinnari, Jouko and Verdoja, Francesco and Kyrki, Ville},
-  journal={arXiv preprint arXiv:2110.01967},
-  year={2021}
-}
+  journal={IEEE Robotics and Automation Letters}, 
+  title={Season-Invariant GNSS-Denied Visual Localization for UAVs}, 
+  year={2022},
+  volume={7},
+  number={4},
+  pages={10232-10239},
+  doi={10.1109/LRA.2022.3191038}}
 ```
 
 ## Downloading data
