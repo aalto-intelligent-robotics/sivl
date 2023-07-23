@@ -171,6 +171,7 @@ if __name__ == '__main__':
                 cumulative_loss_alltrls += loss.mean().item()*numSamplesInBatch
                 cumulative_samples_alltrls += numSamplesInBatch
                 
+                loss.mean().backward()
                 optimizer.step()
         
                 if i % cfg.training.printAfterEveryNthBatch == 0 and i != 0:
