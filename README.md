@@ -5,7 +5,7 @@ This repository contains data and code for manuscript J. Kinnari, F. Verdoja, V.
 ## Setting up
 Clone this repository on your computer.
 
-Download the checkpoint file ```exp45_clean.pt``` from [here](https://users.aalto.fi/~jkinnari/sivl/exp45_clean.pt) and place it in folder ```checkpoints```.
+Update on Nov 23, 2023: Pretrained checkpoint has been removed. Please contact author for acccess to it.
 
 Install [Anaconda](https://www.anaconda.com/). Create a new environment using the provided yml file:
 
